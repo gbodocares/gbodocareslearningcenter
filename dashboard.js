@@ -15,7 +15,8 @@ var ssproject = document.getElementById('ssproject');
 var finalproject = document.getElementById('finalproject');
 var total1 = document.getElementById('total1');
 var image = document.getElementById('photo');
-var image1 = document.getElementById('photo');
+var image1 = document.getElementById('profileImg1');
+var image2 = document.getElementById('profileImg2');
 var gender = document.getElementById('gender1');
 
 firebase.auth().onAuthStateChanged((user) => {
@@ -54,6 +55,7 @@ firebase.auth().onAuthStateChanged((user) => {
             gender.innerHTML = studentDetails.gender;
             image.src = studentDetails.imageUrl;
             image1.src = studentDetails.imageUrl;
+            image2.src = studentDetails.imageUrl;
 
             document.getElementById('fname').value = upper1;
             document.getElementById('sname').value = upper2;
