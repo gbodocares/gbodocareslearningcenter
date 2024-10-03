@@ -14,8 +14,8 @@ var ssatt = document.getElementById('ssatt');
 var ssproject = document.getElementById('ssproject');
 var finalproject = document.getElementById('finalproject');
 var total1 = document.getElementById('total1');
-var image = document.getElementById('profileImg');
-var image1 = document.getElementById('profileImg1');
+var image = document.getElementById('photo');
+var image1 = document.getElementById('photo');
 var gender = document.getElementById('gender1');
 
 firebase.auth().onAuthStateChanged((user) => {
