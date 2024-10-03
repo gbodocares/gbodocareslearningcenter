@@ -4,12 +4,12 @@ function eventSignUp(e) {
     e.preventDefault();
 
     let id = Math.floor(Math.random() * 10000000);
-    let fullname1 = document.querySelector('#fullname').value;
+    let fullname11 = document.querySelector('#fullname1').value;
     let studentId1 = document.querySelector('#myId').value;
 
     firebase.database().ref('cleanUp/' + id).set({
+        fullname: fullname11,
         signUpId: id,
-        fullname: fullname1,
         studentId: studentId1
     });
 

@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Star Admin2 </title>
+    <title>GCLC | Student Dashboard </title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/vendors/feather/feather.css">
     <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
@@ -22,7 +22,7 @@
     <!-- inject:css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- endinject -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link rel="shortcut icon" href="./img/gbodo.png" />
     <link href="modal.css" rel="stylesheet" />
   </head>
   <body class="with-welcome-text">
@@ -52,10 +52,10 @@
           </div>
           <div>
             <a class="navbar-brand brand-logo" href="index.html">
-              <img src="assets/images/logo.svg" alt="logo" />
+              <img src="./img/gbodo.png" alt="logo" />
             </a>
             <a class="navbar-brand brand-logo-mini" href="index.html">
-              <img src="assets/images/logo-mini.svg" alt="logo" />
+              <img src="./img/gbodo.png" alt="logo" />
             </a>
           </div>
         </div>
@@ -104,7 +104,7 @@
                 <img class="img-xs rounded-circle" src="" alt="Profile image" id="profileImg1"> </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                 <p class="dropdown-item" id="studentName2"></p>
-                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+                <button id="logout-btn" style="border: none; outline: none; background: none;"><a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a></button>
               </div>
             </li>
            
@@ -338,7 +338,7 @@
                           <div class="row flex-grow">
                             <div class="col-12 grid-margin stretch-card">
                               <div class="card card-rounded" style="background-image: url('./img/cleanup.jpg');">
-                                <div class="card-body" style="background-color: rgba(0,0,0,0.7);">
+                                <div class="card-body" style="background-color: rgba(0,0,0,0.8);">
                                   <div class="row">
                                     <div class="col-lg-12">
                                       <div class="d-flex justify-content-between align-items-center">
@@ -373,7 +373,7 @@
                                             <form id="eventSignUp" action="#">
                                               <h4 class="mt-2" style="color:white;"><i class="fa fa-hand"></i> I want to participate</h4>         
                                               <div style="display:flex; column-gap: 10px;">
-                                                <input class="form-input mt-2 spec" id="fullname" type="text" placeholder="Full name" style="width: 45%; border: 1px solid rgb(218, 152, 71); padding-left:10px; height:35px; background-color: transparent; color: white;"/>
+                                                <input class="form-input mt-2 spec" id="fullname1" type="text" placeholder="Full name" style="width: 45%; border: 1px solid rgb(218, 152, 71); padding-left:10px; height:35px; background-color: transparent; color: white;"/>
                                                 <input class="form-input mt-2 spec" id="myId" type="text" placeholder="Student ID " style="border: 1px solid rgb(218, 152, 71); padding-left:10px; height:35px; background-color: transparent; color:white;"/>
                                               </div>
                                               <button type="submit" class="mt-3" style="border: none; outline: none; background-color: rgb(218, 152, 71); font-weight: 700; padding: 10px 10px; width: 100%;">Sign me up!</button>
@@ -402,7 +402,7 @@
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
+              <!-- <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span> -->
               <span class="float-none float-sm-end d-block mt-1 mt-sm-0 text-center">Copyright © 2023. All rights reserved.</span>
             </div>
           </footer>
@@ -443,6 +443,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
   
     <script src="config.js"></script>
+    <script src="logout.js"></script>
     <script src="eventSignUp.js"></script>
     <script src="dashboard.js"></script>
     <script src="modal.js"></script>
