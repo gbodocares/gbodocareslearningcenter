@@ -193,6 +193,7 @@
                                       <p style="font-size: 18px !important;"> <b><i class="fa fa-user-o"></i> &nbsp; Full Name: </b><span id="studentName3"></span></p>
                                       <p class="mt-2" style="font-size: 17px !important;"><b><i class="fa fa-envelope"></i> &nbsp; Email:</b>&nbsp; <span id="studentEmail"></span></p>
                                       <p class="mt-2" style="font-size: 17px !important;"><b><i class="fa fa-pencil"></i> &nbsp; Student ID:</b>&nbsp; <span id="studentId"></span></p>
+                                      <p class="mt-2" style="font-size: 17px !important;"><b><i class="fa fa-pencil"></i> &nbsp; Department:</b>&nbsp; <span id="dept"></span></p>
                                       <p class="mt-2" style="font-size: 17px !important;"><b><i class="fa fa-user-circle"></i> &nbsp; Gender:</b>&nbsp; <span id="gender1"></span></p>
                                       <p class="mt-2" style="font-size: 17px !important;"><b><i class="fa fa-phone"></i> &nbsp; Mobile Number:</b>&nbsp; <span id="phoneNumber"></span></p>
                                       <p class="mt-2" style="font-size: 17px !important;"><b><i class="fa fa-map-marker"></i> &nbsp; Address:</b> &nbsp;<span id="address11"></span></p>
@@ -225,17 +226,34 @@
                                                 </div>
                                               </div>
                       
-                                                <div style="display: flex; column-gap: 8px;">
-                                                  <div style="display: flex; flex-direction: column;">
-                                                    <label for="mobile">Mobile number</label>
-                                                    <input type="text" id="phone" name="email" placeholder="">
-                                                  </div>
-                      
-                                                  <div style="display: flex; flex-direction: column;">
-                                                    <label for="studentId">Student Id</label>
-                                                    <input type="text" id="phone" name="email" placeholder="" disabled>
-                                                  </div>
+                                              <div style="display: flex; column-gap: 8px;">
+                                                <div style="display: flex; flex-direction: column;">
+                                                  <label for="mobile">Mobile number</label>
+                                                  <input type="text" id="phone" name="email" placeholder="">
                                                 </div>
+                    
+                                                <div style="display: flex; flex-direction: column;">
+                                                  <label for="studentId">Student Id</label>
+                                                  <input type="text" id="phone" name="email" placeholder="" disabled>
+                                                </div>
+                                              </div>
+
+                                              <div>
+                                                <label for="department">Department</label>
+                                                <select id="dept1">
+                                                  <option value="no choice" disabled>--Select your Department--</option>
+                                                  <option value="web design">Intro to Web Design</option>
+                                                  <option value="ui/ux design">Intro to UI/UX Design</option>
+                                                  <option value="backend dev">Intro to Backend Development</option>
+                                                  <option value="videography">Videography</option>
+                                                  <option value="photography">Photography</option>
+                                                  <option value="video editing">Video Editing</option>
+                                                  <option value="make-up">Make-up</option>
+                                                  <option value="tailoring">Tailoring</option>
+                                                  <option value="nails decoration">Nails Decoration</option>
+                                                </select>
+                                                
+                                              </div>
                                                 
                                         
                                               <div style="display: flex; flex-direction: column;">

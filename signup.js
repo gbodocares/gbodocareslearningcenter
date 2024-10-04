@@ -11,7 +11,7 @@ const registerBtn = document.getElementById("signup").onclick = ((e) => {
     const email = document.getElementById("email-signup").value;
     const password = document.getElementById("password-signup").value;
     const gender = document.getElementById('gender').value;
-
+    const department = document.getElementById('dept').value;
     
 
     console.log(gender);
@@ -30,6 +30,7 @@ const registerBtn = document.getElementById("signup").onclick = ((e) => {
                 studentId: studentId,
                 phone: '',  
                 address: '',
+                dept: department,
                 test: 0,
                 imageUrl: '',
                 attendance: 0,

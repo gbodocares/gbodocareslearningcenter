@@ -18,6 +18,7 @@ var image = document.getElementById('photo');
 var image1 = document.getElementById('profileImg1');
 var image2 = document.getElementById('profileImg2');
 var gender = document.getElementById('gender1');
+var dept = document.getElementById('dept')
 
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
@@ -56,6 +57,7 @@ firebase.auth().onAuthStateChanged((user) => {
             image.src = studentDetails.imageUrl;
             image1.src = studentDetails.imageUrl;
             image2.src = studentDetails.imageUrl;
+            dept.innerHTML = studentDetails.dept;
 
             document.getElementById('fname').value = upper1;
             document.getElementById('sname').value = upper2;
@@ -63,6 +65,7 @@ firebase.auth().onAuthStateChanged((user) => {
             // document.getElementById('email').value = studentDetails.email;
             document.getElementById('address').value = studentDetails.address;
             document.getElementById('bio').value = studentDetails.bio;
+            document.getElementById('dept').value = studentDetails.dept;
 
         } else {
            

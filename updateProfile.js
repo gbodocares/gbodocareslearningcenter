@@ -8,10 +8,11 @@ function editProfile(e) {
         if (user) {
             var fname1 =  document.getElementById('fname').value;
             var sname1 =  document.getElementById('sname').value;
-            var phone1 = document.getElementById('phone').value;
+            var phone1 =  document.getElementById('phone').value;
             // var email1 = document.getElementById('email').value;
             var address1 = document.getElementById('address').value;
             var bio1 = document.getElementById('bio').value;
+            var department1 = document.getElementById('dept1').value;
 
              db.collection("students").doc(user.uid).update({
                 firstname: fname1,
@@ -20,7 +21,8 @@ function editProfile(e) {
                 bio: bio1,
                 // studentId: studentId,
                 phone: phone1,  
-                address: address1,
+                dept: department1,
+                address: address1
              })
              swal({
                 title: "Profile",
