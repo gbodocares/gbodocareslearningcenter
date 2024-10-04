@@ -37,7 +37,7 @@ const registerBtn = document.getElementById("signup").onclick = ((e) => {
                 softSkillAtt: 0,
                 softSkillProject: 0,
                 finalProject: 0,
-                total: 0,
+                total: attendance + softSkillAtt + softSkillProject + finalProject + test,
                 created_at: today.getFullYear() + "-" + (today.getMonth() +1) + "-" + today.getDate()
             })
             swal({
