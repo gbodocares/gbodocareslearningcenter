@@ -1,4 +1,4 @@
-
+var user = firebase.auth().currentUser;
 
 const loginBtn = document.getElementById("login").onclick = ((e) => {
     e.preventDefault()

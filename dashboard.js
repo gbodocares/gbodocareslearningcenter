@@ -1,3 +1,5 @@
+var user = firebase.auth().currentUser;
+
 var studentName = document.getElementById('fullname');
 var studentName1 = document.getElementById('studentName1');
 var studentName2 = document.getElementById('studentName2');
