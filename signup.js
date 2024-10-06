@@ -16,7 +16,7 @@ const registerBtn = document.getElementById("signup").onclick = ((e) => {
 
     console.log(gender);
 
-    const today = new Date();
+    //const today = new Date();
 
     firebase.auth().createUserWithEmailAndPassword(email, password)
         .then((userCredentials) => {
@@ -38,7 +38,7 @@ const registerBtn = document.getElementById("signup").onclick = ((e) => {
                 softSkillProject: 0,
                 finalProject: 0,
                 total: 0,
-                // created_at: today.getFullYear() + "-" + (today.getMonth() +1) + "-" + today.getDate()
+                //created_at: today.getFullYear() + "-" + (today.getMonth() +1) + "-" + today.getDate()
             })
             swal({
                 title: "Student Account",
