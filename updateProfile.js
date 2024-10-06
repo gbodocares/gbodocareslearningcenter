@@ -1,4 +1,4 @@
-const user = firebase.auth().currentUser;
+
 
 function editProfile(e) {
     event.preventDefault();
