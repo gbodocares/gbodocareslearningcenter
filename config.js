@@ -1,11 +1,11 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCzeXvcgkgLgQu1Pj2qce4wANvbe7ChWO4",
-    authDomain: "gclc-eabb4.firebaseapp.com",
-    databaseURL: "https://gclc-eabb4-default-rtdb.firebaseio.com",
-    projectId: "gclc-eabb4",
-    storageBucket: "gclc-eabb4.appspot.com",
-    messagingSenderId: "588542989378",
-    appId: "1:588542989378:web:ee83a42419ccaeac0249db"
+    apiKey: "AIzaSyDY1XyVW0vCt_P_uQXT-p7PZMS0-9yDfHA",
+    authDomain: "student-88864.firebaseapp.com",
+    databaseURL: "https://student-88864-default-rtdb.firebaseio.com",
+    projectId: "student-88864",
+    storageBucket: "student-88864.appspot.com",
+    messagingSenderId: "906483921344",
+    appId: "1:906483921344:web:58bca4cafd658735731825"
 };
 
 firebase.initializeApp(firebaseConfig);
