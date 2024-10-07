@@ -13,6 +13,7 @@ function editProfile(e) {
             var address1 = document.getElementById('address').value;
             var bio1 = document.getElementById('bio').value;
             var department1 = document.getElementById('dept1').value;
+            var studentId = document.getElementById('studentId').value;
 
              db.collection("students").doc(user.uid).update({
                 firstname: fname1,
@@ -22,6 +23,7 @@ function editProfile(e) {
                 // studentId: studentId,
                 phone: phone1,  
                 dept: department1,
+                studentId: studentId,
                 address: address1
              })
              swal({
