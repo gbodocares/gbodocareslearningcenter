@@ -67,7 +67,7 @@ firebase.auth().onAuthStateChanged((user) => {
             // document.getElementById('email').value = studentDetails.email;
             document.getElementById('address').value = studentDetails.address;
             document.getElementById('bio').value = studentDetails.bio;
-            document.getElementById('studentId').value = studentDetails.studentId;
+            document.getElementById('studentId1').value = studentDetails.studentId;
             document.getElementById('dept').value = studentDetails.dept;
 
         } else {

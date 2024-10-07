@@ -13,14 +13,14 @@ function editProfile(e) {
             var address1 = document.getElementById('address').value;
             var bio1 = document.getElementById('bio').value;
             var department1 = document.getElementById('dept1').value;
-            var studentId = document.getElementById('studentId').value;
+            var studentId1 = document.getElementById('studentId1').value;
 
              db.collection("students").doc(user.uid).update({
                 firstname: fname1,
                 surname: sname1,
                 // email: email1,
                 bio: bio1,
-                studentId: studentId,
+                studentId: studentId1,
                 phone: phone1,  
                 dept: department1,
                 address: address1
