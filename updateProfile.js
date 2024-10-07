@@ -20,10 +20,9 @@ function editProfile(e) {
                 surname: sname1,
                 // email: email1,
                 bio: bio1,
-                // studentId: studentId,
+                studentId: studentId,
                 phone: phone1,  
                 dept: department1,
-                studentId: studentId,
                 address: address1
              })
              swal({
