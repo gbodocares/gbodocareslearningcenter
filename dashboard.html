@@ -310,15 +310,28 @@
                             <div class="col-md-6 col-lg-12 grid-margin stretch-card">
                               <div class="card  card-rounded" style="background-color: rgb(218, 152, 71);">
                                 <div class="card-body pb-0">
-                                  <h4 class="card-title card-title-dash text-white mb-4"><i class="fa fa-book"></i> Class Assignments</h4>
+                                  <h4 class="card-title card-title-dash text-white mb-4"><i class="fa fa-book"></i>Class Rankings</h4>
                                   <div class="row">
-                                    <div class="col-sm-4">
-                                      <p class="status-summary-ight-white mb-1">Your Class Assignment will appear here</p>
+                                    <!-- <div class="col-sm-4">
+                                      <p class="status-summary-ight-white mb-1">Student Positions</p>
                                       <h1  class="text-info" id="total1" ></h1>
-                                    </div>
+                                    </div> -->
                                     <div class="col-sm-8">
                                       <div class="status-summary-chart-wrapper pb-4">
-                                        
+                                        <table>
+                                          <thead>
+                                            <tr>
+                                              <th>S/N</th>
+                                              <th>Name</th>
+                                              <th>Pts</th>
+                                            </tr>
+                                          </thead>
+                                          
+
+                                          <tbody id="classDataTable">
+
+                                          </tbody>
+                                        </table>
                                       </div>
                                     </div>
                                   </div>
@@ -341,7 +354,7 @@
                                   <div class="col-sm-8">
                                     <h3 class="text-white upgrade-info mb-0">Upcoming Event</h3>
                                     <br>
-                                    <h4 class="text-white upgrade-info mb-1"> Student Day</h4>
+                                    <h4 class="text-white upgrade-info mb-1"> Workshop Session Week</h4>
                                     <h4 class="text-white upgrade-info mb-0"> Clean-up exercise</h4>
                                     <!-- <a href="#" class="btn btn-info upgrade-btn">Upgrade Account!</a> -->
                                   </div>
@@ -467,6 +480,7 @@
     <script src="modal.js"></script>
     <script src="updateProfile.js"></script>
     <script src="updatePhoto.js"></script>
+    <script src="table.js"></script>
     
     <!-- <script src="assets/js/Chart.roundedBarCharts.js"></script> -->
     <!-- End custom js for this page-->
