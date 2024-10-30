@@ -10,28 +10,54 @@ db.collection("students").where("dept", "==", "ui/ux design")
     .get()
     .then((querySnapshot) => {
     var Users = [];
+   
     
     querySnapshot.forEach((doc) => {
-        console.log(doc.data());
-        Users.push(doc.data());
+        // console.log(doc.data());
+        let allNames = doc.data().firstname + ' ' + doc.data().surname;
+        let allScores = doc.data().test + doc.data().attendance + doc.data().softSkillAtt + doc.data().softSkillProject + doc.data().finalProject;
+        let studentObj = {
+            personName: allNames,
+            personScore: allScores
+        }
+        Users.push(studentObj);
+        Users.sort((a, b) => parseFloat(b.personScore) - parseFloat(a.personScore));
         console.log(Users)
-        var count = 1;
+        let count = 1;
         var classDataTable = Users.map((data) => {
-        // var studentId = data.studentId;
-        var studentNames = data.data.firstname + ' ' + data.surname;
-        var totalMark = data.attendance + data.test + data.softSkillAtt + data.softSkillProject + data.finalProject;
-        console.log(typeof(Users))
             return `<div>
-            
-            <tr>
-                <td>${count++}</td>
-                <td>${studentNames}</td>
-                <td>${totalMark}</td>
-            </tr>
-            
+                <tr>
+                    <td>${count++}</td>
+                    <td>${data.personName}</td>
+                    <td>${data.personScore}</td>
+                </tr>
             </div>
             `
-        }).join(' ')
+        }).join(' ');
+        // var count = 1;
+        // var allScores = [];
+        // var classDataTable = Users.map((data) => {
+        // // var studentId = data.studentId;
+        
+        // var studentNames = data.firstname + ' ' + data.surname;
+        // var totalMark = data.attendance + data.test + data.softSkillAtt + data.softSkillProject + data.finalProject;
+        // allScores.push(totalMark);
+        // allScores.sort(function(a, b){return b - a});
+
+        // console.log("all scores" + allScores);
+
+        // // console.log(('alltotal:' + allScores))
+        //     return `<div>
+            
+        //     <tr>
+        //         <td>${count++}</td>
+        //         <td>${studentNames}</td>
+        //         <td>${totalMark}</td>
+        //     </tr>
+            
+        //     </div>
+        //     `
+        // }).join(' ')
         
         //cities.push(doc.data().name);
         document.getElementById('classDataTable').innerHTML = classDataTable;
