@@ -6801,6 +6801,12 @@ button.bg-dark:focus {
   flex-direction: row !important;
 }
 
+@media only screen and (max-wdith: 900px){
+  .specialtable{
+    min-height: 400px !important;
+  }
+}
+
 .flex-column {
   flex-direction: column !important;
 }
