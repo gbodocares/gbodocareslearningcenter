@@ -1,11 +1,3 @@
-// function sortAsc(arr) {
-//     return arr.slice().sort((a, b) => a - b);
-//}
-
-// const array = [5, 3, 9, 1, 7];
-// const sortedArray = sortAsc(array);
-// console.log("Sorted Array (Ascending):", sortedArray);
-
 
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
@@ -13,7 +5,7 @@ firebase.auth().onAuthStateChanged((user) => {
       var uid = user.uid;
       
       var docRef = db.collection("students").doc(uid);
-      
+
       docRef.get().then((doc) => {
             if (doc.exists) {
                 var studentDetails = doc.data();
