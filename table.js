@@ -21,8 +21,10 @@ firebase.auth().onAuthStateChanged((user) => {
                     querySnapshot.forEach((doc) => {
                         // console.log(doc.data());
                         let allNames = doc.data().firstname + ' ' + doc.data().surname;
+                        let allImage = doc.data().imageUrl;
                         let allScores = doc.data().test + doc.data().attendance + doc.data().softSkillAtt + doc.data().softSkillProject + doc.data().finalProject;
                         let studentObj = {
+                            personImage: allImage,
                             personName: allNames,
                             personScore: allScores
                         }
@@ -34,6 +36,7 @@ firebase.auth().onAuthStateChanged((user) => {
                             return `<div>
                                 <tr>
                                     <td>${count++}</td>
+                                    <td><img src="${data.personImage}" alt=""/></td>
                                     <td>${data.personName}</td>
                                     <td>${data.personScore}</td>
                                 </tr>
