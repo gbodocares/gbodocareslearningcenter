@@ -9,7 +9,7 @@ firebase.auth().onAuthStateChanged((user) => {
       docRef.get().then((doc) => {
             if (doc.exists) {
                 var studentDetails = doc.data();
-                console.log("Document data:", studentDetails);
+                // console.log("Document data:", studentDetails);
                 
 
                 db.collection("students").where("dept", "==", studentDetails.dept)
@@ -30,13 +30,13 @@ firebase.auth().onAuthStateChanged((user) => {
                         }
                         Users.push(studentObj);
                         Users.sort((a, b) => parseFloat(b.personScore) - parseFloat(a.personScore));
-                        console.log(Users)
+                        console.log(allImage)
                         let count = 1;
                         var classDataTable = Users.map((data) => {
                             return `<div>
                                 <tr>
                                     <td>${count++}</td>
-                                    <td><img src="${data.personImage}" alt=""/></td>
+                                    <td><img src="${data.personImage}" alt="" /></td>
                                     <td>${data.personName}</td>
                                     <td>${data.personScore}</td>
                                 </tr>
