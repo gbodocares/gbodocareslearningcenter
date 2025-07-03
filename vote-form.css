@@ -265,6 +265,7 @@ box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    row-gap: 40px;
     background-color: rgba(20, 20, 20, 0.6);
 }
 
