@@ -23,6 +23,7 @@
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="vote-form.css" rel="stylesheet" />
     <!-- endinject -->
     <link rel="shortcut icon" href="./img/gbodo.png" />
     <link href="modal.css" rel="stylesheet" />
@@ -347,7 +348,7 @@
                         
                       </div>
                       <div class="row">
-                        <div class="col-lg-8 d-flex flex-column">
+                        <div class="col-lg-6 d-flex flex-column">
                           
                           <div class="row flex-grow">
                             <div class="col-12 grid-margin stretch-card">
@@ -356,8 +357,8 @@
                                   <div class="col-sm-8">
                                     <h3 class="text-white upgrade-info mb-0">Upcoming Event</h3>
                                     <br>
-                                    <h4 class="text-white upgrade-info mb-1"> Student Week - Thursday, 8th May 2025</h4>
-                                    <h4 class="text-white upgrade-info mb-0"> First Assessment Test - Wednesday, 7th May 2025</h4>
+                                    <h4 class="text-white upgrade-info mb-1"> Soft Skill Examination - Friday, 4th July 2025</h4>
+                                    <h4 class="text-white upgrade-info mb-0"> Soft Skill Entrepreneurship Project Defence - Saturday, 5th July 2025</h4>
                                     <!-- <a href="#" class="btn btn-info upgrade-btn">Upgrade Account!</a> -->
                                   </div>
                                 </div>
@@ -367,17 +368,17 @@
                           
                           
                         </div>
-                        <div class="col-lg-4 d-flex flex-column">
-                          <div class="row flex-grow">
+                        <div class="col-lg-6 d-flex flex-column">
+                          <!-- <div class="row flex-grow">
                             <div class="col-12 grid-margin stretch-card">
                               <div class="card card-rounded" style="background-image: url('./img/workshop.png'); background-size: cover; background-repeat: no-repeat;">
                                 <div class="card-body" style="background-color: rgba(0,0,0,0.8);">
                                   <div class="row">
                                     <div class="col-lg-12">
                                       <div class="d-flex justify-content-between align-items-center">
-                                        <h4 class="card-title card-title-dash" style="color:white;">Upcoming Events</h4>
+                                        
                                         <div class="add-items d-flex mb-0">
-                                          <!-- <input type="text" class="form-control todo-list-input" placeholder="What do you need to do today?"> -->
+                                           <input type="text" class="form-control todo-list-input" placeholder="What do you need to do today?">
                                           
                                         </div>
                                       </div>
@@ -400,7 +401,7 @@
                                                 <li style="padding: 5px 10px;" class="date-item"><span class="seconds">0</span>Secs</li>
                                               </div>
                                             </ul>
-                                          </div>
+                                          </div> 
 
                                           <div>
                                             <form id="eventSignUp" action="#" style="visibility: hidden;">
@@ -411,7 +412,9 @@
                                               </div>
                                               <button type="submit" class="mt-3" style="border: none; outline: none; background-color: rgb(218, 152, 71); font-weight: 700; padding: 10px 10px; width: 100%;">Sign me up!</button>
                                               
-                                            </form>
+                                            </form> 
+
+                                            
                                           </div>
                                         </div>
                                       </div>
@@ -420,7 +423,177 @@
                                 </div>
                               </div>
                             </div>
+                          </div>-->
+
+                          <div class="formbold-main-wrapper">
+
+                            <div id="intro">
+                              <div class="intro-text">
+                                <h2>BATCH 8 STUDENT AWARD NOMINATIONS</h2>
+                                <h3>Recognizing Outstanding Achievement in Students!</h3>
+                                <button onclick="nominateNow()">Proceed To Nomination</button>
+                              </div>
+                              
+                            </div>
+                            <!-- Author: FormBold Team -->
+                            <!-- Learn More: https://formbold.com -->
+                            <div class="formbold-form-wrapper" id="allForm">
+                              <form id="sub-nom">
+                                  <div class="formbold-steps">
+                                      <ul>
+                                         
+                                          <li class="formbold-step-menu1 active">
+                                              <span>1</span>
+                                              Nominate
+                                          </li>
+                                          <li class="formbold-step-menu2">
+                                              <span>2</span>
+                                              Statement
+                                          </li>
+                                          <li class="formbold-step-menu3">
+                                              <span>3</span>
+                                              Confirm
+                                          </li>
+
+                                          
+                                      </ul>
+                                  </div>
+
+                                  
+
+                                  
+
+                                  <div class="formbold-form-step-1 active ">
+                                    <div class="formbold-input-flex">
+                                      <div>
+                                          <label for="category" class="formbold-form-label"> Award Category <i class="bi bi-trophy" style="font-size: 18px;"></i></label>
+                                          <select style="width: 100% !important;" class="formbold-form-input" id="awardCategory" required>
+                                            <option value="No Selection">---Select a Category---</option>
+                                            <option value="Leadership Award">Leadership Award</option>
+                                            <option value="Best Class Representative" disabled>Best Class Representative</option>
+                                            <option value="Star Student Award" disabled>Star Student Award</option>
+                                            <option value="Most outspoken student">Most outspoken student</option>
+                                            <option value="Best Dressed(Male)">Best Dressed(Male)</option>
+                                            <option value="Best Dressed(Female)">Best Dressed(Female)</option>
+                                            <option value="Most Popular student(Male)">Most Popular student(Male)</option>
+                                            <option value="Most Popular student(Femle)">Most Popular student(Female)</option>
+                                          </select>
+                                      </div>
+                                      
+                                    </div>
+
+                                    <div class="formbold-input-flex">
+                                      <div>
+                                          <label for="e" class="formbold-form-label"> Department <i class="bi bi-buildings"></i></label>
+                                          <select style="width: 100% !important;" class="formbold-form-input" id="nomineeDept" required>
+                                            <option value="No selection">---Select his/her Department---</option>
+                                            <option value="Make-up">Make-up</option>
+                                            <option value="Nails Technology">Nails Technology</option>
+                                            <option value="Tailoring">Tailoring</option>
+                                            <option value="Web Design">Web Design</option>
+                                            <option value="UI/UX Design">UI/UX Design</option>
+                                            <option value="Backend Devlopment">Backend Devlopment</option>
+                                            <option value="Videography & Photography">Videography & Photography</option>
+                                            <option value="Video Editing">Video Editing</option>
+                                          </select>
+                                      </div>
+                                    </div>
+                            
+                                    <div class="formbold-input-flex">
+                                        <div>
+                                            <label for="nomineeName" class="formbold-form-label"> Full name of nominee  <i class="bi bi-person-check" style="font-size: 18px;"></i></label>
+                                            <input 
+                                            type="text" 
+                                            name="nomineeName001" 
+                                            id="nomineeName" 
+                                            class="formbold-form-input" 
+                                            required
+                                            />
+                                        </div>
+                                      
+                                    </div>
+                            
+                                    
+                                  </div>
+
+                                  <div class="formbold-form-step-2">
+                                    <div>
+                                      <label for="ShortStatement" class="formbold-form-label"> Short Statement (15 - 50) Words <i class="bi bi-pen"></i></label>
+                                      <p id="tooltip"></p>
+                                      <textarea
+                                        
+                                        rows="6"
+                                        id="shortStatement"
+                                        placeholder="Why does your preferred nominee deserve this award"
+                                        class="formbold-form-input"
+                                        minlength="10"
+                                        maxlength="200"
+                                        required
+                                      ></textarea>
+                                    </div>
+                                  </div>
+
+                                  <div class="formbold-form-step-3">
+                                    <!-- <div class="formbold-form-confirm"> -->
+                                    <p>
+                                      <b> <i class="bi bi-check2-all"></i> I confirm my selection with my Name and Student ID </b>
+                                    </p>
+
+                                      
+                                    <div class="formbold-input-flex">
+                                        
+                                      <div>
+                                          <input 
+                                        type="text" 
+                                        name="fullname01" 
+                                        id="fullName" 
+                                        placeholder="Your full name"
+                                        class="formbold-form-input"
+                                        required
+                                        />
+                                      </div>
+
+                                      <div>
+                                          <input 
+                                        type="text" 
+                                        name="studentId" 
+                                        id="studId" 
+                                        placeholder="Your student ID"
+                                        class="formbold-form-input"
+                                        required
+                                        />
+                                      </div>
+                                        
+                                    </div>
+                                    
+                                    
+                                 
+                                  </div>
+
+                                  <div class="formbold-form-btn-wrapper">
+
+                                    <button class="resetBtn" onclick="window.location.reload()">
+                                      reset <i class="bi bi-arrow-clockwise"></i>
+                                    </button>
+                                   
+                                    <button class="formbold-back-btn">
+                                      <i class="bi bi-arrow-left"></i> Back
+                                    </button>
+
+                                    <button class="formbold-btn" >
+                                      Next Step <i class="bi bi-arrow-right"></i>
+                                    </button>
+                                    
+
+                                    <button  class="submitNom" style="display: none;"  type="submit">
+                                      Submit nomination
+                                    </button>
+                                  </div>
+                              </form>
+                            </div>
                           </div>
+                                            
+                                            
                         </div>  
                           
                           
@@ -481,12 +654,13 @@
   
     <script src="config.js"></script>
     <script src="logout.js"></script>
-    <script src="eventSignUp.js"></script>
+    <!-- <script src="eventSignUp.js"></script> -->
     <script src="dashboard.js"></script>
     <script src="modal.js"></script>
     <script src="updateProfile.js"></script>
     <script src="updatePhoto.js"></script>
     <script src="table.js"></script>
+    <script src="vote-form.js"></script>
     
     <!-- <script src="assets/js/Chart.roundedBarCharts.js"></script> -->
     <!-- End custom js for this page-->
