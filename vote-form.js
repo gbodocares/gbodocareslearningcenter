@@ -14,7 +14,6 @@ function submitNomination(e){
     let fullName01 = document.getElementById('fullName').value;
     let studentId = document.querySelector('#studId').value;
 
-   
 
     firebase.database().ref('awardNominations/' + id).set({
         awardCategory: awardCategory,
